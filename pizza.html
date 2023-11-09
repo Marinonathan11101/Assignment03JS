@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maker</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/pizza.js" defer></script>
+</head>
+
+<body>
+    <h1> The Pizza Machine</h1>
+    <p>A form to create a pizza object when <br> pressing the order button.</p>
+    <form>
+        <div>
+            <label for="pizzaName">Enter your name: </label>
+            <input type="text" id="pizzaname" name="pizzaname"><br>
+        </div>
+
+
+        <div>
+            <label for="dough">Select Type of Dough</label>
+            <select name="dough" id="dough">
+                <option value="Gluten">Gluten</option>
+                <option value="Regular">Regular</option>
+                <option value="Sourdough">SourDough</option>
+            </select> <br>
+        </div>
+
+        <div>
+            <label for="sauce">Select Type of Sauce</label>
+            <select name="sauce" id="sauce">
+                <option value="Tomato">Tomato</option>
+                <option value="BBQ">BBQ</option>
+                <option value="Pesto">Pesto</option>
+            </select> <br>
+        </div>
+
+        <div>
+            <label for="cheese">Select Type of Cheese</label>
+            <select name="cheese" id="cheese">
+                <option value="Cheddar">Chedder</option>
+                <option value="Mozzarella">Mozzarella</option>
+                <option value="Blue">Blue</option>
+                <option value="Goat">Goat</option>
+            </select><br>
+        </div>
+
+        <div>
+            <label for="Toppings">Choose Toppings</label>
+            <input type="checkbox" id="Olives" name="Toppings" value="Green Olives">
+            <label for="Green Olives">Green Olives</label>
+            <input type="checkbox" id="Mushrooms" name="Toppings" value="Mushrooms">
+            <label for="Mushrooms">Mushrooms</label>
+            <input type="checkbox" id="Pepperoni" name="Toppings" value="Pepperoni">
+            <label for="Pepperoni">Pepperoni</label>
+            <input type="checkbox" id="Peppers" name="Toppings" value="Peppers">
+            <label for="Peppers">Peppers</label>
+            <input type="checkbox" id="Ham" name="Toppings" value="Ham">
+            <label for="Ham">Ham</label>
+
+        </div>
+
+    </form>
+    <button id="order"> Order Pizza</button>
+    <p id="output"></p>
+</body>
+
+</html>
